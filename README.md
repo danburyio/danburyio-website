@@ -1,23 +1,22 @@
-newhaven.io
+danbury.io
 ===========
 
 This is the code for the
-[newhaven.io](http://www.newhaven.io) website. It's just a
+[danbury.io](http://www.danbury.io) website. It's just a
 placeholder right now. If you'd like to help build the
-site (and the New Haven hacker community) please get in touch.  You can
-find fellow New Haven hackers via
+site (and the Danbury hacker community) please get in touch.  You can
+find fellow Danbury hackers via
 
-* the [newhaven.io Google group](https://groups.google.com/forum/?fromgroups#!forum/newhavenio);
-* the [newhaven.io Twitter account](http://twitter.com/newhavenio)
-* the #newhavenio IRC channel on Freenode.
+* TBD
+ 
 
 ## Quickstart (OS X)
 
 For impatient people, this should work.
 
 ```
-git clone https://github.com/newhavenio/newhavenio-website
-cd newhavenio-website
+git clone https://github.com/danburyio/danburyio-website
+cd danburyio-website
 
 brew install node
 brew install mongodb
@@ -31,7 +30,7 @@ foreman start -f Procfile.dev
 
 ## Requirements
 
-The newhaven.io website is 
+The danbury.io website is 
 an [Express](http://expressjs.com/)
 application
 that is hosted on [Heroku](https://www.heroku.com/).
@@ -68,8 +67,8 @@ the node package manager.
 
 First, you'll need to check out this repository.
 
-    git clone https://github.com/newhavenio/newhavenio-website
-    cd newhavenio-website
+    git clone https://github.com/danburyio/danburyio-website
+    cd danburyio-website
 
 ### Installing the dependencies
 
@@ -133,13 +132,13 @@ Then, you can run the tests like
 
 ### Deploying the site
 
-The site is hosted on Heroku.  Only a few people
-can deploy, please contact Kyle, Joel, or Chris.
+The site will be hosted on Heroku.  Only a few people
+can deploy, please contact _TBD_.
 
 ## Contributors
 
 The following people generously donated their time to building
-the newhaven.io website.  You should generously donate yours too!
+the danbury.io website and its parent fork newhaven.io.  You should generously donate yours too!
 
 * [Devin Weaver](https://github.com/sukima)
 * [Chris Fidao](https://github.com/fideloper)
@@ -149,6 +148,11 @@ the newhaven.io website.  You should generously donate yours too!
 * [Zach Morek](https://github.com/ZachBeta)
 * [Krishna R. Sampath](https://github.com/KrishnaRSampath)
 * [Kyle Jensen](http://github.com/kljensen)
+
+## Credit
+
+This is a fork of the [newhaven.io](https://github.com/newhavenio/newhavenio-website) site. Many thanks to
+their team for open-sourcing their hard work!
 
 ## License
 
