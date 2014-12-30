@@ -1,3 +1,3 @@
 web: ./node_modules/.bin/grunt server --force
-db: mongod
+db: mongod --dbpath ~/.mongodb/data
 css: compass watch app
