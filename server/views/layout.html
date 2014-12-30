@@ -42,7 +42,7 @@
       <div class="row">
         <a class="toggle" gumby-trigger="#main-nav > .row > ul" href="#"><i class="icon-menu"></i></a>
         <h1 class="four columns logo" id="logo">
-          <a href="/">new<strong>haven</strong>.io</a>
+          <a href="/"><strong>danbury</strong>.io</a>
         </h1>
         <ul class="twelve columns">
           <li><a href="/developers">Developers</a></li>
@@ -104,7 +104,7 @@
           }
         }).error(function(){
           markup = '<div class="medium default btn icon-left entypo icon-github"><a href="/auth">Login with GitHub</a> </div>';
-          $('#login-holder').prepend(markup);        
+          $('#login-holder').prepend(markup);
         });
       });
     </script>
@@ -118,7 +118,7 @@
         // This is a kludge, and we still have a problem where
         // Gumby is raising an exception like
         // TypeError: 'undefined' is not an object (evaluating '$.event.handle.apply')
-        // 
+        //
         $('a.toggle').first().on('touchstart', function(e){
           e.preventDefault();
           $(e.target).trigger('gumby.trigger');
