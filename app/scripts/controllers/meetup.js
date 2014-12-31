@@ -11,7 +11,7 @@ angular.module('nhvioApp')
     var feeds = [
       {
         "eventPrefix": "",
-        "meetupUrl": "http://api.meetup.com/2/events?status=upcoming&order=time&limited_events=False&group_urlname=danburyio&desc=false&offset=0&photo-host=public&format=json&page=20&fields=&sig_id=13965389&sig=e5a06bd53550449466557602e1dcadcaf76d5465"
+        "meetupUrl": "http://api.meetup.com/2/events?callback=JSON_CALLBACK&status=upcoming&order=time&limited_events=False&group_urlname=danburyio&desc=false&offset=0&photo-host=public&format=json&page=20&fields=&sig_id=13965389&sig=e5a06bd53550449466557602e1dcadcaf76d5465"
       },
       {
         "eventPrefix": "",
