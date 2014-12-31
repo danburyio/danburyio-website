@@ -8,7 +8,7 @@ site (and the Danbury hacker community) please get in touch.  You can
 find fellow Danbury hackers via
 
 * TBD
- 
+
 
 ## Quickstart (OS X)
 
@@ -30,7 +30,7 @@ foreman start -f Procfile.dev
 
 ## Requirements
 
-The danbury.io website is 
+The danbury.io website is
 an [Express](http://expressjs.com/)
 application
 that is hosted on [Heroku](https://www.heroku.com/).
@@ -38,7 +38,7 @@ We use a variety of tools to build the app, including
 [Sass](http://sass-lang.com/),
 [Yeoman](http://yeoman.io/),
 [Bower](http://bower.io/),
-[Grunt](http://gruntjs.com/), 
+[Grunt](http://gruntjs.com/),
 and Yeoman's [Angular Generator](https://github.com/yeoman/generator-angular).
 
 To make changes to the website, you'll need a few
@@ -85,7 +85,7 @@ You can preview any changes you're making live by running
 
 This will open up a browser window and automatically refresh
 as you make changes to different files.  If you run the server
-like that, you'll also need to be running Mongodb via the 
+like that, you'll also need to be running Mongodb via the
 `mongod` command.  Alternatively, you can run both MongoDB
 and the server using the following command
 
@@ -96,7 +96,7 @@ and the server using the following command
 ## Environment variables
 
 If you encountered an exception starting the server, it's
-likely that your environment is missing some required 
+likely that your environment is missing some required
 variables.  You should keep these variables in a `.env` file,
 so that `foreman` will source them automatically.  Your
 `.env` should contain the following:
@@ -106,6 +106,7 @@ so that `foreman` will source them automatically.  Your
 	GITHUB_CALLBACK_URL=http://localhost:9000/auth/callback
 	MONGOHQ_URL=mongodb://localhost/newhaven-io
 	COOKIE_SECRET=whatever-doesnt-matter-locally
+  SERVER_SECRET=whatever-doesnt-matter-locally
 	KNOWN_ADMINS=your-github-login
 
 If you want to test the GitHub Oauth, you'll need to
