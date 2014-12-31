@@ -11,15 +11,9 @@ angular.module('nhvioApp')
     var feeds = [
       {
         "eventPrefix": "",
-        "meetupUrl": "http://api.meetup.com/2/events?callback=JSON_CALLBACK&status=upcoming&order=time&limited_events=False&group_urlname=newhavenio&desc=false&offset=0&format=json&page=20&fields=&sig_id=26187422&sig=aa008c5591ab44f404d9c70a48211e9089e5f7f8"
-      },
-      {
-        "eventPrefix": "A100",
-        "meetupUrl": "http://api.meetup.com/2/events?callback=JSON_CALLBACK&status=upcoming&order=time&limited_events=False&group_urlname=a100-dev-community&desc=false&offset=0&format=json&page=10&fields=&sig_id=26187422&sig=eb79b98cfd0843a7ad2998077697ca2f2d6baf76"
+        "meetupUrl": "http://api.meetup.com/2/events?callback=JSON_CALLBACK&status=upcoming&order=time&limited_events=False&group_urlname=Danbury-Hackerspace&desc=false&offset=0&photo-host=public&format=json&page=20&fields=&sig_id=13965389&sig=08b18745a5e2cea862196e5f26754eec1b13408b"
       }
     ];
     $scope.events = meetupService.getEvents(feeds);
 
   }]);
-
-
