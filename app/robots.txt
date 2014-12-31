@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin
 Disallow: /profile
 Disallow: /api/
-Sitemap: http://www.newhaven.io/sitemap.xml
+Sitemap: http://danbury.io/sitemap.xml

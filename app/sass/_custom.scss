@@ -208,10 +208,10 @@ html, body {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 13px;
-  color: $body-font-color;
+  color: $body-h2-event-header;
     a {
         font-weight: bold;
-        color: $body-font-color;
+        color: $body-h2-event-header;
         display: inline-block;
         padding-right: 15px;
         @include respond(all-phones) {
