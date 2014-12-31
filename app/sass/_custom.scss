@@ -140,6 +140,13 @@ html, body {
         line-height: 32px;
         font-weight: 600;
         text-shadow: 0px 1px 3px #000;
+
+        a {
+           color: $body-h2-event-link-color;
+          }
+        a:hover {
+          color: $body-h2-event-link-hover;
+        }
     }
 }
 
