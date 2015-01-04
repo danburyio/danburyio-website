@@ -7,7 +7,7 @@ basePath = '';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
-  // 
+  //
   // Dependencies
   'app/bower_components/modernizr/modernizr.js',
   'app/bower_components/jquery/jquery.js',
@@ -15,12 +15,19 @@ files = [
   'app/bower_components/angular-resource/angular-resource.js',
   'app/bower_components/angular-cookies/angular-cookies.js',
   'app/bower_components/angular-sanitize/angular-sanitize.js',
+  'app/bower_components/restangular/dist/restangular.js',
+  'app/bower_components/es5-shim/es5-shim.js',
+  'app/bower_components/jquery/jquery.js',
+  'app/bower_components/json3/lib/json3.js',
+  'app/bower_components/lodash/lodash.js',
+  'app/scripts/modernizr-custom.min.js',
   'app/scripts/lib/gumby.js',
   // Our code
-  'app/scripts/app.js',
+  'app/scripts/main.js',
+  'app/scripts/apps/admin-app.js',
+  'app/scripts/services/*.js',
   'app/scripts/controllers/*.js',
   'app/scripts/filters/*.js',
-  'app/scripts/services/*.js',
   // Test stuff
   'app/bower_components/angular-mocks/angular-mocks.js',
   'test/mock/**/*.js',
