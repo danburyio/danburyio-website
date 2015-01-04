@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: CompanyeditCtrl', function () {
+describe('Controller: CompanyEditCtrl', function () {
 
   // load the controller's module
   beforeEach(module('nhvioApp'));
@@ -11,7 +11,7 @@ describe('Controller: CompanyeditCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    CompanyeditCtrl = $controller('CompanyeditCtrl', {
+    CompanyeditCtrl = $controller('CompanyEditCtrl', {
       $scope: scope
     });
   }));
