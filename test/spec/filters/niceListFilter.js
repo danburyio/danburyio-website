@@ -11,9 +11,9 @@ describe('Filter: niceListFilter', function () {
     niceListFilter = $filter('niceList');
   }));
 
-  it('should return the input prefixed with "niceListFilter filter:"', function () {
-    var text = 'angularjs';
-    expect(niceListFilter(text)).toBe('niceListFilter filter: ' + text);
+  it('should return the input as a grammatically-correct list"', function () {
+    var naughtyList = ['apple','banana','cherry'];
+    expect(niceListFilter(naughtyList)).toBe('apple, banana & cherry');
   });
 
 });
