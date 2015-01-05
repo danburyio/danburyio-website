@@ -28,6 +28,7 @@ files = [
   'app/scripts/services/*.js',
   'app/scripts/controllers/*.js',
   'app/scripts/filters/*.js',
+  'app/scripts/directives/*.js',
   // Test stuff
   'app/bower_components/angular-mocks/angular-mocks.js',
   'test/mock/**/*.js',

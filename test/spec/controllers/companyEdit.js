@@ -44,4 +44,32 @@ describe('Controller: CompanyEditCtrl', function () {
     expect(scope.company.isNew).toBe(true);
   });
 
+  // it('should load the existing company', function () {
+  //   httpBackend.expect('GET', '/api/users/me')
+  //   .respond({
+  //   });
+  //   httpBackend.expect('GET', '/api/companies/1234')
+  //   .respond({
+  //     name: 'Acme Co.'
+  //   });
+  //   httpBackend.expect('GET', '/api/languages')
+  //   .respond({
+  //   });
+  //   httpBackend.expect('GET', '/api/users')
+  //   .respond({
+  //   });
+  //
+  //   CompanyEditCtrl = controller('CompanyEditCtrl', {
+  //     $scope: scope,
+  //     $routeParams: {companyId: 1234}
+  //   });
+  //
+  //   waitsFor(function () {
+  //     return typeof scope.company !== 'undefined';
+  //   }, "The company should be loaded", 5000);
+  //
+  //   expect(scope.company).toBeDefined();
+  //
+  // });
+
 });

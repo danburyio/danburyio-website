@@ -9,14 +9,18 @@ describe('Controller: UsersCtrl', function () {
     scope;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
     scope = $rootScope.$new();
+
+    $httpBackend.expect('GET', '/api/users')
+      .respond([{},{},{}]);
+
     UsersCtrl = $controller('UsersCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a list of users to the scope', function () {
+    expect(scope.users.length).toBe(3);
   });
 });

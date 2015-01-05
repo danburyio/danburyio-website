@@ -9,14 +9,32 @@ describe('Controller: UserEditCtrl', function () {
     scope;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
     scope = $rootScope.$new();
+
+
+    $httpBackend.expect('GET', "/api/users/1234")
+    .respond({
+    });
+    $httpBackend.expect('GET', "/api/companies")
+    .respond([
+    {
+    }
+    ]);
+    $httpBackend.expect('GET', "/api/languages")
+    .respond({
+    });
+
+
     UserEditCtrl = $controller('UserEditCtrl', {
-      $scope: scope
+      $scope: scope,
+      $routeParams: { developerId: "1234" }
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a user to the scope', function () {
+    expect(scope.user).toBeDefined();
+    expect(scope.companies).toBeDefined();
+    expect(scope.programmingLanguages).toBeDefined();
   });
 });
