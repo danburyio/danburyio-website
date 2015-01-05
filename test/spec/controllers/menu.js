@@ -6,17 +6,22 @@ describe('Controller: MenuCtrl', function () {
   beforeEach(module('nhvioApp'));
 
   var MenuCtrl,
-    scope;
+    scope,
+    httpBackend,
+    controller;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
     scope = $rootScope.$new();
-    MenuCtrl = $controller('MenuCtrl', {
-      $scope: scope
+    controller = $controller;
+    httpBackend = $httpBackend;
+
+    httpBackend.expect('GET', '/api/users/me')
+    .respond({
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should add the current user to the scope', function () {
+    expect(scope.me).toBeDefined();
   });
 });
