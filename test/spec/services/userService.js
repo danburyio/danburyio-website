@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Service: userService', function () {
+describe('Service: UserService', function () {
 
   // load the service's module
   beforeEach(module('nhvioApp'));
 
   // instantiate service
   var userService;
-  beforeEach(inject(function (_userService_) {
-    userService = _userService_;
+  beforeEach(inject(function (_UserService_) {
+    userService = _UserService_;
   }));
 
-  it('should do something', function () {
+  it('should create a UserService', function () {
     expect(!!userService).toBe(true);
   });
 
