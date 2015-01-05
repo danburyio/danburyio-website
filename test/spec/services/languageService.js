@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: Languageservice', function () {
+describe('Service: LanguageService', function () {
 
   // load the service's module
-  beforeEach(module('NhvioApp'));
+  beforeEach(module('nhvioApp'));
 
   // instantiate service
-  var Languageservice;
-  beforeEach(inject(function (_Languageservice_) {
-    Languageservice = _Languageservice_;
+  var LanguageService;
+  beforeEach(inject(function (_LanguageService_) {
+    LanguageService = _LanguageService_;
   }));
 
-  it('should do something', function () {
-    expect(!!Languageservice).toBe(true);
+  it('should create the LanguageService', function () {
+    expect(!!LanguageService).toBe(true);
   });
 
 });
