@@ -19,6 +19,9 @@ describe('Controller: MenuCtrl', function () {
     httpBackend.expect('GET', '/api/users/me')
     .respond({
     });
+    MenuCtrl = $controller('MenuCtrl', {
+      $scope: scope
+    });
   }));
 
   it('should add the current user to the scope', function () {
