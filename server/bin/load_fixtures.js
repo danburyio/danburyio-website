@@ -76,6 +76,9 @@ function addSocialLinks(user){
 		user.linkedinUrl = '/' + getRandUsername(user.firstName);
 	}
 	if (Math.random() < 0.7){
+		user.facebookUrl = '/' + getRandUsername(user.firstName);
+	}
+	if (Math.random() < 0.7){
 		user.blog = 'http://www.' + getRandUsername(user.firstName) + '.com/';
 	}
 }
@@ -211,4 +214,3 @@ for (var i = 0; i < numUsers; i++) {
   	tryExit();
   });
 };
-
