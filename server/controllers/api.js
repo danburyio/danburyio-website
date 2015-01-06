@@ -94,7 +94,7 @@ ApiController.prototype.route = function()
         var editableFields = [
             'name', 'description', 'webUrl', 'twitterUrl',
             'technologies', 'location', 'languages', 'admin_ids',
-            'linkedinUrl'
+            'linkedinUrl', 'facebookUrl'
         ];
         var payload = _.pick(req.body, editableFields);
 

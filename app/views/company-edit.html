@@ -34,6 +34,12 @@
 	  				</li>
 					<li class="danger alert" data-ng-show="companyEditForm.linkedinUrl.$invalid">Invalid LinkedIn URL</li>
 
+            <li class="prepend field" data-ng-class="{'danger': companyEditForm.facebookUrl.$invalid}">
+              <span class="adjoined">https://facebook.com/</span>
+              <input class="input wide" type="text" name="facebookUrl" ng-model="company.facebookUrl" placeholder="Facebook URL" data-ng-minlength="3" data-ng-maxlength="75" data-ng-disabled="submitting" data-ng-pattern="/^[A-Za-z0-9-\/]{3,75}$/"/>
+            </li>
+          <li class="danger alert" data-ng-show="companyEditForm.facebookUrl.$invalid">Invalid Facebook URL</li>
+
 	  				<li class="prepend field" data-ng-class="{'danger': companyEditForm.webUrl.$invalid}">
   					    <span class="adjoined">http://</span>
 			  	        <input class="input wide email" type="text" name="webUrl" ng-model="company.webUrl" placeholder="Company URL" data-ng-minlength="3" data-ng-maxlength="50" data-ng-disabled="submitting" data-ng-pattern="/^[A-Za-z0-9-\/~]+\.[A-Za-z]{2,}([\/.][A-Za-z0-9-~]+)*\/?$/"/>
