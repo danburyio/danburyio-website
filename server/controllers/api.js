@@ -94,7 +94,7 @@ ApiController.prototype.route = function()
         var editableFields = [
             'name', 'description', 'webUrl', 'twitterUrl',
             'technologies', 'location', 'languages', 'admin_ids',
-            'linkedinUrl'
+            'linkedinUrl', 'facebookUrl'
         ];
         var payload = _.pick(req.body, editableFields);
 
@@ -254,7 +254,7 @@ ApiController.prototype.route = function()
             });
     });
 
-    function getUserAdminCompanies(req, res, user_id){        
+    function getUserAdminCompanies(req, res, user_id){
         Company
             .find({admin_ids: req.user._id})
             .lean()
@@ -289,7 +289,8 @@ ApiController.prototype.route = function()
 
         var editableFields = [
             'firstName', 'lastName', 'bio', 'languages', 'twitterUrl',
-            'linkedinUrl', 'blogUrl', 'email', 'active', 'company_ids'
+            'linkedinUrl', 'facebookUrl', 'blogUrl', 'email', 'active',
+            'company_ids'
         ];
         var arrayFields = {
             'languages': 5,

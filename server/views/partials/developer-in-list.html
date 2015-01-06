@@ -21,6 +21,11 @@
         <a href="https://www.linkedin.com/{(developer.linkedinUrl)}" itemprop="url" title="{(developer.firstName)} {(developer.lastName)} on LinkedIn"><i class="icon-linkedin"></i></a>
       </li>
       {% endif %}
+      {% if developer.facebookUrl %}
+      <li>
+        <a href="https://www.facebook.com/{(developer.facebookUrl)}" itemprop="url" title="{(developer.firstName)} {(developer.lastName)} on Facebook"><i class="icon-facebook"></i></a>
+      </li>
+      {% endif %}
     </ul>
   </div>
   {% if developer.bio %}
@@ -36,7 +41,7 @@
   </p>
   <p class="item-languages" itemscope itemtype="http://schema.org/ItemList">
     {% if developer.languages.length > 0 %}
-  
+
       {# NOTE: The '-' in this for loop eliminates whitespace #}
 
       {% for key in developer.languages -%}
