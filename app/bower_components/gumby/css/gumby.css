@@ -2279,7 +2279,7 @@ img { -ms-interpolation-mode: bicubic; }
 .btn.large.icon-left a:before, .skiplink.large.icon-left a:before { left: 17.33333px; }
 .btn.large.icon-right a, .skiplink.large.icon-right a { padding-right: 58px; }
 .btn.large.icon-right a:after, .skiplink.large.icon-right a:after { right: 17.33333px; }
-.btn.medium, .skiplink.medium { font-size: 16px; font-size: 1rem; height: 36px; line-height: 34px; }
+.btn.medium, .skiplink.medium { font-size: 16px; font-size: 1rem; height: 36px; line-height: 34px; min-width: 150px !important; }
 .btn.medium a, .skiplink.medium a { position: relative; padding: 0 16px; }
 .btn.medium.icon-left a, .skiplink.medium.icon-left a { padding-left: 36px; }
 .btn.medium.icon-left a:before, .skiplink.medium.icon-left a:before { left: 10.66667px; }
