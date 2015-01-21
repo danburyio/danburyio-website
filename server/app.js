@@ -117,7 +117,7 @@ app.use('/api/', express.csrf({
 app.use(app.router);
 
 // Database configuration
-mongoose.connect(process.env.MONGOHQ_URL);
+mongoose.connect(process.env.MONGOHQ_URL || process.env.MONGOLAB_URI);
 
 // development only
 if ('development' == app.get('env')) {

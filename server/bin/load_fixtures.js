@@ -10,8 +10,8 @@ fs.readdirSync(models_path).forEach( function(file){
 });
 
 // Connect to database
-console.log(process.env.MONGOHQ_URL);
-mongoose.connect(process.env.MONGOHQ_URL);
+console.log(process.env.MONGOHQ_URL || process.env.MONGOLAB_URI);
+mongoose.connect(process.env.MONGOHQ_URL || process.env.MONGOLAB_URI);
 
 function randInt(min, max){
   return Math.floor(min + Math.random() * (max-min))

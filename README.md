@@ -104,7 +104,7 @@ so that `foreman` will source them automatically.  Your
 	GITHUB_CLIENT_ID=PUT-SOME-THING-HERE
 	GITHUB_CLIENT_SECRET=PUT-SOME-THING-HERE
 	GITHUB_CALLBACK_URL=http://localhost:9000/auth/callback
-	MONGOHQ_URL=mongodb://localhost/newhaven-io
+	MONGOLAB_URI=mongodb://localhost/newhaven-io
 	COOKIE_SECRET=whatever-doesnt-matter-locally
   SERVER_SECRET=whatever-doesnt-matter-locally
 	KNOWN_ADMINS=your-github-login
@@ -112,7 +112,7 @@ so that `foreman` will source them automatically.  Your
 If you want to test the GitHub Oauth, you'll need to
 [set up a GitHub application here](https://github.com/settings/applications)
 and stick the credentials GitHub gives you in the `GITHUB_*` variables.
-Obviously, you can change the value of the `MONGOHQ_URL`,
+Obviously, you can change the value of the `MONGOLAB_URI`,
 `COOKIE_SECRET` and `KNOWN_ADMINS` to be whatever you want.
 (The latter parameter is a comma-delimited list of GitHub
 users that should receive the "admin" role in the NewHaven.io
