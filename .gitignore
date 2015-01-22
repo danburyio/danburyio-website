@@ -8,3 +8,5 @@ _site/
 ._*
 npm-debug.log
 tmp/
+.idea
+*.iml

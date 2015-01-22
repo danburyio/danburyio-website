@@ -67,7 +67,7 @@ angular.module('nhvioApp')
         }
       }
 
-      function getEventsForFeed(meetupUrl, eventPrefix){
+      function getEventsForFeed(meetupUrl, eventPrefix, cssClass){
 
         // Fetch the API response
         $http.jsonp(meetupUrl).success(function(meetupResponse){
@@ -86,6 +86,9 @@ angular.module('nhvioApp')
             // Calculate the number of days until this event
             var eventTime = new Date(thisEvent.time);
             thisEvent.daysAway = dayDiff(eventTime, today);
+
+            // Copy the extra class (CSS) value to the event
+            thisEvent.cssClass = cssClass;
 
             // Push it onto our array of events
             meetupEvents.push(thisEvent);
@@ -106,7 +109,8 @@ angular.module('nhvioApp')
       for (var i = feeds.length - 1; i >= 0; i--) {
         var meetupUrl = feeds[i].meetupUrl;
         var eventPrefix = feeds[i].eventPrefix;
-        getEventsForFeed(meetupUrl, eventPrefix);
+        var cssClass = feeds[i].cssClass;
+        getEventsForFeed(meetupUrl, eventPrefix, cssClass);
       }
       return deferred.promise;
     }
