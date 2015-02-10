@@ -133,8 +133,11 @@ Then, you can run the tests like
 
 ### Deploying the site
 
-The site will be hosted on Heroku.  Only a few people
-can deploy, please contact _TBD_.
+[![Build Status](https://snap-ci.com/danburyio/danburyio-website/branch/master/build_image)](https://snap-ci.com/danburyio/danburyio-website/branch/master)
+
+The site is hosted on Heroku and the `master` branch is automatically deployed
+with [Snap-CI](https://snap-ci.com/danburyio/danburyio-website/branch/master).
+Anyone with push access can deploy new changes by merging them into `master`.
 
 ## Contributors
 
