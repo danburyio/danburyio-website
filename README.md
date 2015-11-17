@@ -7,8 +7,7 @@ placeholder right now. If you'd like to help build the
 site (and the Danbury hacker community) please get in touch.  You can
 find fellow Danbury hackers via
 
-* TBD
-
+[![Slack Status](http://slack.danbury.io/badge.svg)](http://slack.danbury.io)
 
 ## Quickstart (OS X)
 
